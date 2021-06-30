@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+.all-button {
+  color: #e7a331;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.all-button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.background-50::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+
