@@ -183,7 +183,7 @@ header {
   } 
 }
 @media (max-width: 1199px) {
-  .nav-bar2 .container nav button {
+  .nav-bar2 .container nav a {
     display: none;
   }
 } 
@@ -422,7 +422,7 @@ header {
 .services .my-services .box-text p {
   color: #4a4a4a;
   font-size: 15px;
- line-height: 1.4;
+ line-height: 1.6;
  padding-top: 20px;
  text-align: start;
 }
@@ -538,16 +538,16 @@ header {
   display: block;
   transition:4s;
 }
-.portfolio-img .my-img img:hover + div {
+.portfolio-img .my-img:hover.my-img div {
   top: 10%;
 }
-.portfolio-img .my-img img:hover + div span {
+.portfolio-img .my-img:hover.my-img div span {
   border-color: #fff;
   background-color: var(--main-color);
   border-radius: 50%;
   transition:2.5s;
-}
-.portfolio-img .my-img img:hover + div button {
+} 
+.portfolio-img .my-img div button:hover {
   border-color: #fff;
   color: #fff;
   background-color: var(--main-color);
@@ -629,16 +629,22 @@ header {
   flex-basis: 55%;
   z-index: 4;
 }
-@media (max-width: 767px) {
+.ourpakeg .our-pakeg .my-pakeg li .span-all {
+  margin-top: -3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ourpakeg .our-pakeg .my-pakeg li .span-min {
+  display: inline;
+ } 
+ @media (max-width: 767px) {
   .ourpakeg .our-pakeg .my-pakeg {
     margin-left: 0;
   }
 }
-.ourpakeg .our-pakeg .my-pakeg li span {
-  display: inline;
- } 
+
 @media (max-width: 991px) {
- .ourpakeg .our-pakeg .my-pakeg li span {
+.ourpakeg .our-pakeg .my-pakeg li .span-min {
    display: none;
   } 
 }
@@ -662,6 +668,13 @@ header {
   padding: 5px;
   margin-bottom: 35px;
   color: #777;
+  display: flex;
+}
+@media (max-width: 767px)  {
+  .ourpakeg .our-pakeg .my-pakeg li {
+    font-size: 14px;
+    padding-right: 15px;
+  }
 }
 @media (min-width: 1200px) {
   .ourpakeg .our-pakeg .my-pakeg li {
@@ -673,16 +686,11 @@ header {
   position: absolute;
   top: 0px;
   left: -50px;
-  transition: 1.5s;
 } 
-.ourpakeg .our-pakeg .my-pakeg li:hover::before {
-  content: " ";
-  transform: rotate(380deg);
-}
 .ourpakeg .our-pakeg .box-2 {
   margin-left: 0;
   margin-right: -10%;  
-   z-index: 2; 
+   z-index: 3; 
 }
 @media (max-width: 767px) {
   .ourpakeg .our-pakeg .box-2 {
@@ -902,7 +910,8 @@ header {
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
-  background-color: #323232;
+  background-color: #eee;
+  border-style: none;
 }
 .contact .my-contact .my-form form textarea.my-input {
   height: 150px;
